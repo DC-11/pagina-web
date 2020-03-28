@@ -311,10 +311,8 @@ footer{
 
 /*--------------------- media query----------------*/
 @media screen and (max-width: 760px) {
-  body{
-      background: green;
-  }
   .Contenedor{
+    width: 100%;
     grid-template-areas:  "logo logo logo"
                           "header header header"
                           "banner2   banner2   banner2"
@@ -367,16 +365,15 @@ footer{
     grid-area: banner2;
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding-top: 10px;
 
   }
 
 }
 @media screen and (min-width: 760px) and (max-width: 900px){
-  body{
-    background: blue;
-  }
+ 
   .Contenedor{
+    width: 100%;
     grid-template-areas:  "logo logo logo"
                           "header header header"
                           "banner2   banner2   banner2"
