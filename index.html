@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>David Cadena</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+  <body>
+    <div class="Contenedor">
+      <!-------------Encabezado------------>
+      <div class="logo">
+        <h2>DC 11.</h2>
+      </div>
+      <header>
+        <div class="menu"><i class="icon-list"></i>Menu</div>
+            <ul class="item-menu" >
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#acerca">Acerca</a></li>
+              <li><a href="#whatsapp">Contacto</a></li>
+            </ul>
+      </header>
+      <div class="banner"></div>
+      <div class="banner2">
+        <img src="img/banner.jpg" alt="banner">
+        <div class="texto">
+          <p>Mi nombre es</p>
+          <h1>David Cadena</h1>
+          <div class="boton">
+            <h3>Ingeniería de sistemas</h3>
+            <a name="acerca"></a>
+          </div>
+        </div>
+      </div>
+
+<!-------------ACERCA DE------------>
+
+      <main>
+          <img src="img/foto.jpg" alt="Foto">
+
+      </main>
+
+      <div class="acerca">
+        <h1>Bienvenidos</h1>
+        <p>Soy David Cadena estudiante de la carrera de ingeniería de sistemas de la Universidad Politécnica Salesiana.
+          Me apasiona todo lo relacionado con la tecnologia como la programación, el diseño de páginas web y mucho más. </p>
+        <p>También soy amante del fútbol y lo practico desde hace muchos años.</p>
+      </div>
+
+      <!----------Contact------>
+      <section>
+        <h1>Contacto</h1>
+      </section>
+
+      <div class="facebook">
+          <a href="https://www.facebook.com/profile.php?id=100031407542585"><i class="icon-facebook"></i></a>
+          <h5>Facebook</h5>
+          <p>www.facebook.com</p>
+      </div>
+
+      <div class="phone">
+        <a href="#" name="whatsapp"><i class="icon-whatsapp"></i></a>
+        <h5>Teléfono</h5>
+        <p>0979147112</p>
+      </div>
+
+      <div class="mail">
+        <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1585250170&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d3d8872f1-be6d-ad32-2a30-69c7fe0e7c39&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015"><i class="icon-gmail"></i></a>
+        <h5>Correo electrónico</h5>
+        <p>david.cadena@hotmail.com</p>
+      </div>
+
+      <!-------------FOOTER------------>
+      <footer>
+        <p class="derechos">(C) Todos los derechos reservados by David Cadena</p>
+        <p class="fecha">Marzo 26 del 2020</p>
+
+      </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $(".menu").on("click", function (){
+          $(this).next().slideToggle();
+        });
+      });
+    </script>
+
+  </body>
+</html>

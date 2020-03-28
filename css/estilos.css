@@ -1,0 +1,409 @@
+
+@font-face {
+  font-family: Vogue;
+  src: url("../fonts/Vogue.ttf");
+}
+
+@font-face {
+  font-family: Renner;
+  src: url("../fonts/Renner_400 Book.ttf");
+}
+@font-face {
+  font-family: LEMONMILK;
+  src: url("../fonts/LEMONMILK-Regular.otf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  background: #7D7D7D;
+}
+.Contenedor{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 410px;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:  "logo header header"
+                        "banner   banner2   banner2"
+                        "main     main       acerca"
+                        "section section section"
+                        "facebook phone mail"
+                        "footer footer footer";
+
+}
+
+.logo{
+  text-align: center;
+  grid-area: logo;
+  background: #1A151B;
+
+}
+.logo h2{
+  font-family: LEMONMILK;
+  font-size: 20px;
+  color: #fff;
+}
+
+header{
+  grid-area: header;
+}
+
+.menu{
+  display: none;
+}
+
+.menu:hover::before{
+  cursor: pointer;
+}
+
+.item-menu{
+  list-style: none;
+  background: #5D5D5D;
+  text-align: center;
+}
+.item-menu li{
+  font-family: Vogue;
+  display: inline-block;
+}
+
+.item-menu li a{
+  text-decoration: none;
+  line-height: 2.5;
+  padding: 10px 50px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+   background-image: linear-gradient(rgb(080, 131, 152), rgb(080, 131, 152));
+   background-position: 50% 75%;
+   background-repeat: no-repeat;
+   background-size: 0% 8px;
+   transition: background-size .3s;
+}
+.item-menu li a:hover{
+  background-size: 50% 3px;
+}
+
+.banner {
+  grid-area: banner;
+  background: #1A151B;
+  display: flex;
+  align-items: center;
+}
+
+.banner2{
+  grid-area: banner2;
+  display: flex;
+  align-items: center;
+
+}
+
+.banner2 img{
+  width: 100%;
+}
+.texto{
+  position: absolute;
+}
+.texto p{
+  font-family: Vogue;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 28px;
+  animation-name: texto;
+  animation-duration: 3.5s;
+}
+.texto h1{
+  font-family: Vogue;
+  text-transform: uppercase;
+  font-size: 40px;
+  animation-name: texto;
+  animation-duration: 3.5s;
+}
+
+@keyframes texto {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.boton{
+  padding: 20px 0;
+}
+.boton h3{
+  text-align: center;
+  font-family: Vogue;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px;
+  background: #508398;
+  border: 2px solid #508398;
+  animation-name: texto;
+  animation-duration: 3.5s;
+}
+
+
+/*---------main-----------*/
+
+main{
+  text-align: center;
+  padding: 80px 0;
+  grid-area: main;
+  background: #ECECEC;
+}
+
+main img{
+  box-shadow: -40px -25px 0 -5px;
+}
+
+/*---------Bienvenidos-----------*/
+.acerca{
+  grid-area: acerca;
+  background: #ECECEC;
+  padding-right: 40px;
+  padding: 80px 0;
+}
+
+.acerca h1{
+  font-family: LEMONMILK;
+  font-size: 30px;
+  font-weight: 400px;
+  margin-bottom: 20px;
+}
+.acerca p{
+  font-family: Renner;
+  letter-spacing: -1px;
+  font-size: 20px;
+  padding-bottom: 20px;
+
+}
+/*--------------Contacto------------*/
+section{
+  grid-area: section;
+  background: #508398;
+}
+section h1{
+  color: #fff;
+  text-align: center;
+  font-family: Vogue;
+  padding: 50px 0;
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+}
+
+section h1::after{
+  content: "";
+  width: 110px;
+  height: 5px;
+  margin: auto;
+  display: block;
+  background: #eee;
+}
+
+.facebook{
+  grid-area: facebook;
+  padding-bottom: 30px;
+  text-align: center;
+  background: #508398;
+}
+
+.facebook a{
+  text-decoration: none;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 50%;
+}
+
+.facebook h5{
+padding: 25px 0;
+font-family: Ranner;
+font-size: 20px;
+}
+
+.facebook p{
+font-family: Ranner;
+font-size: 20px;
+}
+
+
+.phone{
+background: #508398;
+  grid-area: phone;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.phone a{
+  text-decoration: none;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 50%;
+}
+
+
+.phone h5{
+padding: 25px 0;
+font-family: Renner;
+font-size: 20px;
+}
+
+.phone p{
+font-family: Renner;
+font-size: 20px;
+}
+
+.mail{
+background: #508398;
+padding-bottom: 30px;
+  grid-area: mail;
+  text-align: center;
+}
+
+.mail a{
+  text-decoration: none;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 50%;
+}
+
+.mail h5{
+padding: 25px 0;
+font-family: Renner;
+font-size: 20px;
+}
+
+.mail p{
+font-family: Renner;
+font-size: 20px;
+}
+
+footer{
+  grid-area: footer;
+  background: #5D5D5D;
+}
+.derechos{
+  padding-top: 16px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-family: Renner;
+  color: #8b919c;
+  text-align: center;
+}
+
+.fecha{
+  text-align: center;
+  font-size: 18px;
+  font-family: Renner;
+  padding-bottom: 16px;
+  color: #8b919c;
+}
+
+/*--------------------- media query----------------*/
+@media screen and (max-width: 760px) {
+  body{
+      background: green;
+  }
+  .Contenedor{
+    grid-template-areas:  "logo logo logo"
+                          "header header header"
+                          "banner2   banner2   banner2"
+                          "main     main     main"
+                          "acerca acerca acerca"
+                          "section section section"
+                          "facebook facebook facebook "
+                          "phone phone phone "
+                          "mail mail mail"
+                          "footer footer footer";
+  }
+  .menu{
+  line-height: 2.5;
+  background: #508398;
+  display: list-item;
+  color: #fff;
+  }
+  .item-menu{
+    list-style: none;
+    background: #5D5D5D;
+    text-align: left;
+    display: none;
+  }
+  .item-menu li{
+    font-family: Vogue;
+    display: block;
+  /*  display: none;*/
+  }
+  .item-menu li a{
+    padding: 0 8px;
+  }
+  .acerca h1{
+    text-align: center;
+    font-family: LEMONMILK;
+    font-size: 30px;
+    font-weight: 400px;
+    border-top: 2px solid #8b919c;
+    margin-bottom: 10px;
+    padding-top: 30px;
+  }
+  .acerca p{
+    font-family: Renner;
+    letter-spacing: -1px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+
+  }
+  .banner2{
+    grid-area: banner2;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+  }
+
+}
+@media screen and (min-width: 760px) and (max-width: 900px){
+  body{
+    background: blue;
+  }
+  .Contenedor{
+    grid-template-areas:  "logo logo logo"
+                          "header header header"
+                          "banner2   banner2   banner2"
+                          "main     main     acerca"
+                          "section section section"
+                          "facebook facebook facebook "
+                          "phone phone mail"
+                          "footer footer footer";
+  }
+
+  main{
+    text-align: left;
+  }
+  .acerca h1{
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 30px;
+  }
+  .acerca p{
+    font-family: Renner;
+    letter-spacing: -1px;
+    font-size: 20px;
+    padding: 0 10px;
+    padding-bottom: 20px;
+  }
+  main img{
+      box-shadow: 0 0 0 0;
+      padding: 0 10px;
+  }
+}
