@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'david';
-  src:  url('../fonts/david.eot?tsnfr5');
-  src:  url('../fonts/david.eot?tsnfr5#iefix') format('embedded-opentype'),
-    url('../fonts/david.ttf?tsnfr5') format('truetype'),
-    url('../fonts/david.woff?tsnfr5') format('woff'),
-    url('../fonts/david.svg?tsnfr5#david') format('svg');
+  src:  url('../fonts/david.eot?vgmrsa');
+  src:  url('../fonts/david.eot?vgmrsa#iefix') format('embedded-opentype'),
+    url('../fonts/david.ttf?vgmrsa') format('truetype'),
+    url('../fonts/david.woff?vgmrsa') format('woff'),
+    url('../fonts/david.svg?vgmrsa#david') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,53 +25,45 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-list:before {
-  content: "\e909";
+.icon-menu:before {
+  content: "\e900";
+}
+.icon-codefactor:before {
+  content: "\e901";
+  color: #f44a6a;
 }
 .icon-facebook:before {
-  content: "\e900";
+  content: "\e902";
   color: #1877f2;
 }
 .icon-github:before {
-  content: "\e901";
+  content: "\e903";
 }
 .icon-gmail:before {
-  content: "\e902";
+  content: "\e904";
   color: #d14836;
 }
-.icon-messenger:before {
-  content: "\e90a";
-  color: #00b2ff;
-}
 .icon-microsoftoutlook:before {
-  content: "\e90b";
+  content: "\e905";
   color: #0072c6;
 }
-.icon-microsoftpowerpoint:before {
-  content: "\e90c";
-  color: #d24726;
-}
 .icon-microsoftword:before {
-  content: "\e903";
+  content: "\e906";
   color: #2b579a;
 }
 .icon-playstation:before {
-  content: "\e904";
-  color: #003791;
-}
-.icon-playstation3:before {
-  content: "\e905";
+  content: "\e907";
   color: #003791;
 }
 .icon-playstation4:before {
-  content: "\e906";
+  content: "\e908";
   color: #003791;
 }
 .icon-twitter:before {
-  content: "\e907";
+  content: "\e909";
   color: #1da1f2;
 }
 .icon-whatsapp:before {
-  content: "\e908";
+  content: "\e90a";
   color: #25d366;
 }
