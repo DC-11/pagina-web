@@ -367,7 +367,7 @@ footer{
     padding-top: 30px;
   }
   .acerca h1:after{
-    margin: auto;
+    margin: 0 auto;
   }
   .acerca p{
     padding: 10px 50px;
