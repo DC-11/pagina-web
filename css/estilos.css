@@ -188,7 +188,7 @@ main img{
 
 .acerca p{
   font-family: Renner;
-text-align: justify
+  text-align: justify;
   letter-spacing: -1px;
   font-size: 20px;
   padding-right: 50px;
