@@ -337,7 +337,7 @@ footer{
   .menu{
     line-height: 2.5;
     background: #508398;
-    display: inherit;
+    display: block;
     padding: 0 10px;
     color: #fff;
   }
@@ -386,7 +386,7 @@ footer{
   }
 
 }
-@media screen and (min-width: 760px) and (max-width: 830px){
+@media screen and (min-width: 760px) and (max-width: 979px){
 
   .Contenedor{
     width: 100%;
