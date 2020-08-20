@@ -81,10 +81,27 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
+      
+
       $(function(){
+        var x = window.matchMedia("(min-width: 760px)");
+
+        function myFunction(x) {
+          if (x.matches) { // If media query matches
+            $(".item-menu").css("display","block");
+          }else{
+            $(".item-menu").css("display","none");
+          }
+        }  
+
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+        
         $(".menu").on("click", function (){
           $(this).next().slideToggle();
         });
+        
+     
       });
     </script>
 

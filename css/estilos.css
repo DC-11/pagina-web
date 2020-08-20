@@ -386,6 +386,7 @@ footer{
   }
 
 }
+
 @media screen and (min-width: 760px) and (max-width: 979px){
 
   .Contenedor{
@@ -403,6 +404,7 @@ footer{
   main{
     text-align: left;
   }
+ 
 
   .acerca h1{
     text-align: center;
